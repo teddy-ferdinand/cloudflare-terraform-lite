@@ -1,5 +1,5 @@
 resource "cloudflare_zone_settings_override" "zone_settings" {
-  zone_id = var.cloudflare_zone_id
+  zone_id = var.cloudflare_configs["zone_id"]
   settings {
     always_online            = "on"
     always_use_https         = "on"
