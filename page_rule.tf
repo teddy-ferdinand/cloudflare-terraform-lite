@@ -1,4 +1,4 @@
-resource "cloudflare_page_rule" "cache_rss_tfe_fr" {
+resource "cloudflare_page_rule" "cache_rss" {
   zone_id  = var.cloudflare_configs["zone_id"]
   target   = "https://${var.cloudflare_configs["domain"]}/rss/"
   priority = 1
